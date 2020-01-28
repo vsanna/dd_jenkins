@@ -9,6 +9,7 @@ pipeline {
             steps {
                 echo "This build file comes from Github"
                 echo 'Building..'
+                echo "${params.string2}"
             }
         }
         stage('Test') {
